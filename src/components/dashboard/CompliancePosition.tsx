@@ -100,7 +100,7 @@ export function CompliancePosition() {
           <CardHeader>
             <CardTitle className="text-lg flex items-center gap-2">
               <AlertTriangle className="h-5 w-5 text-red-500" />
-              Under-Licensed Software - Compliance Risk
+              Under-Licensed Software - Optimization Opportunities
             </CardTitle>
           </CardHeader>
           <CardContent>
