@@ -9,12 +9,14 @@ import { LicenseEntitlements } from '@/components/dashboard/LicenseEntitlements'
 import { CompliancePosition } from '@/components/dashboard/CompliancePosition'
 import { CostAnalysis } from '@/components/dashboard/CostAnalysis'
 import { LicenseReclamation } from '@/components/dashboard/LicenseReclamation'
+import { Computers } from '@/components/dashboard/Computers'
 
 const viewTitles: Record<string, string> = {
   'dashboard': 'Dashboard Overview',
   'discovery': 'Software Discovery',
   'entitlements': 'License Entitlements',
   'upload-licenses': 'Upload Licenses',
+  'computers': 'Computers',
   'compliance': 'Compliance Position',
   'cost-analysis': 'Cost Analysis',
   'reclamation': 'License Reclamation',
@@ -43,6 +45,8 @@ export default function Home() {
             </div>
           </div>
         )
+      case 'computers':
+        return <Computers />
       case 'compliance':
         return <CompliancePosition />
       case 'cost-analysis':

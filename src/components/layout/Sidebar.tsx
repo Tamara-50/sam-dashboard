@@ -3,17 +3,20 @@
 import React, { useState } from 'react'
 import { 
   LayoutDashboard, 
-  Search, 
+  Package, 
   FileCheck, 
   AlertTriangle, 
+  TrendingUp, 
+  Monitor,
+  ChevronDown,
+  ChevronRight,
+  ArrowLeft,
+  Search, 
   DollarSign, 
   Recycle,
   Settings,
   HelpCircle,
-  ChevronLeft,
-  ChevronRight,
-  ChevronDown,
-  Package
+  ChevronLeft
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
@@ -38,6 +41,7 @@ const navItems = [
       { id: 'upload-licenses', label: 'Upload Licenses' }
     ]
   },
+  { id: 'computers', label: 'Computers', icon: Monitor },
   { id: 'compliance', label: 'Compliance Position', icon: AlertTriangle },
   { id: 'cost-analysis', label: 'Cost Analysis', icon: DollarSign },
   { id: 'reclamation', label: 'License Reclamation', icon: Recycle },
